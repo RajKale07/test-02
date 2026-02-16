@@ -1,8 +1,6 @@
-# module_a.py
+# main.py
 
-def func_a():
-    print("Function A working independently")
-
+import module_a
 
 if __name__ == "__main__":
-    func_a()
+    module_a.func_a()
