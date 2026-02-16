@@ -1,8 +1,10 @@
-# Sample data model
-class Product:
-    def __init__(self, name, price):
+# Data Layer: Models
+class User:
+    def __init__(self, user_id, name):
+        self.user_id = user_id
         self.name = name
-        self.price = price
 
-def sample_products():
-    return [Product("Laptop", 1000), Product("Mouse", 50)]
+class Product:
+    def __init__(self, product_id, title):
+        self.product_id = product_id
+        self.title = title

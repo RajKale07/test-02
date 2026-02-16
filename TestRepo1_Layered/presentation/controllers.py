@@ -1,12 +1,14 @@
-from business.services import calculate_total, apply_discount
-from data.models import sample_products
+# Presentation Layer: Controllers
+from business.services import UserService, ProductService
+from presentation.views import display
 
-def main_controller():
-    products = sample_products()
-    prices = [p.price for p in products]
-    total = calculate_total(prices)
-    discounted = apply_discount(total)
-    print(f"Total: {total}, Discounted: {discounted}")
+user_service = UserService()
+product_service = ProductService()
 
-if __name__ == "__main__":
-    main_controller()
+def show_user(user):
+    name = user_service.get_user_name(user)
+    display(f"User Name: {name}")
+
+def show_product(product):
+    title = product_service.get_product_title(product)
+    display(f"Product Title: {title}")

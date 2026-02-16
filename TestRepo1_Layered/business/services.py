@@ -1,6 +1,10 @@
-# Sample service for Layered Architecture
-def calculate_total(prices):
-    return sum(prices)
+# Business Layer: Services
+from data.models import User, Product
 
-def apply_discount(total, discount=0.1):
-    return total * (1 - discount)
+class UserService:
+    def get_user_name(self, user):
+        return user.name
+
+class ProductService:
+    def get_product_title(self, product):
+        return product.title

@@ -1,3 +1,3 @@
-# Simple view print
+# Presentation Layer: Views
 def display(message):
-    print(f"[VIEW] {message}")
+    print(message)
