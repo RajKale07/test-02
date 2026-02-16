@@ -1,7 +1,8 @@
-from module_b import func_b
-from module_c import func_c
+# module_a.py
 
 def func_a():
-    print("Function A")
-    func_b()
-    func_c()
+    print("Function A working independently")
+
+
+if __name__ == "__main__":
+    func_a()
