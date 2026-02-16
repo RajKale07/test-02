@@ -1,9 +1,7 @@
 # module_a.py
 
+import module_b
+
 def func_a():
-    print("Function A working independently")
-
-
-if __name__ == "__main__":
-    func_a()
-
+    print("Function A executed")
+    module_b.func_b()
