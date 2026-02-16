@@ -1,2 +1,3 @@
-def render_home():
-    print("Home Page")
+# Simple view print
+def display(message):
+    print(f"[VIEW] {message}")
